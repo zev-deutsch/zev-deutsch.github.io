@@ -15,4 +15,8 @@ export class SearchDialogRecipesComponent implements OnInit {
   ngOnInit() {
   }
 
+  dialogClose() {
+    this.dialogRef.close();
+  }
+
 }

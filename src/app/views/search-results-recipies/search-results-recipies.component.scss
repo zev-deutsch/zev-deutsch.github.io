@@ -1,0 +1,22 @@
+.p1 {
+  display: inline;
+  font-size: 15px;
+
+
+}
+.p2 {
+  float: right;
+  margin: 0px;
+  padding: 0px;
+  font-size: 15px;
+}
+
+.example-card {
+  max-width: 200px;
+  margin: 50px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}

@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchBarComponent } from './views/search-bar-ingridients/search-bar.component';
-import {MatButtonModule, MatCardModule, MatFormFieldModule, MatInputModule} from '@angular/material';
+import {MatButtonModule, MatCardModule, MatDividerModule, MatFormFieldModule, MatInputModule} from '@angular/material';
 import { FormsModule} from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -13,7 +13,8 @@ import { SearchDialogComponent } from './views/search-dialog-Ingridients/search-
 import {SearchDialogRecipesComponent} from './views/search-dialog-recipes/search-dialog-recipes.component';
 import { SearchResultsIngridientsComponent } from './views/search-results-ingridients/search-results-ingridients.component';
 import { SearchResultsRecipiesComponent } from './views/search-results-recipies/search-results-recipies.component';
-import {HttpClientModule} from "@angular/common/http";
+import {HttpClientModule} from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import {HttpClientModule} from "@angular/common/http";
     MatButtonModule,
     MatDialogModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
