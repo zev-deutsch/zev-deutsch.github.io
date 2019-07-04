@@ -13,6 +13,7 @@ import { SearchDialogComponent } from './views/search-dialog-Ingridients/search-
 import {SearchDialogRecipesComponent} from './views/search-dialog-recipes/search-dialog-recipes.component';
 import { SearchResultsIngridientsComponent } from './views/search-results-ingridients/search-results-ingridients.component';
 import { SearchResultsRecipiesComponent } from './views/search-results-recipies/search-results-recipies.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { SearchResultsRecipiesComponent } from './views/search-results-recipies/
     BrowserAnimationsModule,
     MatButtonModule,
     MatDialogModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],

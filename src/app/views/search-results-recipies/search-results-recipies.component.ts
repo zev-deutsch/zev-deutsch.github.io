@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
+import {DataService} from "../../controlers/data.service";
 
 @Component({
   selector: 'app-search-results-recipies',
@@ -7,14 +8,18 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['./search-results-recipies.component.sass']
 })
 export class SearchResultsRecipiesComponent implements OnInit {
-searchrec: string;
-  constructor(private route: ActivatedRoute) {
-    this.route.paramMap.subscribe(results => {
-      this.searchrec = results.get('searchrec');
-    });
-  }
+  search: string;
+  constructor(private route: ActivatedRoute, public service: DataService) {}
 
   ngOnInit() {
+    this.route.paramMap.subscribe(results => {
+      this.search = results.get('search');
+    });
+    this.results();
   }
 
+  results() {
+    console.log(this.search);
+    this.service.getRecipies(this.search).subscribe(res => console.log(res));
+  }
 }

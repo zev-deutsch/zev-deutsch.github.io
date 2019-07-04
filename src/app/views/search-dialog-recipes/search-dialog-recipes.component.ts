@@ -7,7 +7,7 @@ import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material';
   styleUrls: ['./search-dialog-recipes.component.scss']
 })
 export class SearchDialogRecipesComponent implements OnInit {
-  search: any;
+  search: string;
 
   constructor(public dialogRef: MatDialogRef<SearchDialogRecipesComponent>,
               @Inject(MAT_DIALOG_DATA) public data) { }
