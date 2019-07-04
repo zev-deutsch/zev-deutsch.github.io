@@ -1,4 +1,5 @@
-<mat-card class="example-card" (click)="results()" *ngFor="let recipe of recipes">
+<div>
+<mat-card (click)="results()" *ngFor="let recipe of recipes">
   <img mat-card-image src="{{recipe.image}}" alt="Photo of a Shiba Inu">
   <mat-card-title style="text-align: center;">{{recipe.label}}</mat-card-title>
 
@@ -8,5 +9,5 @@
   <mat-divider></mat-divider>
   <p class="p2">10 Ingridients</p>
 </mat-card>
-
+</div>
 
