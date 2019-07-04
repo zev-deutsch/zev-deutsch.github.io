@@ -1,10 +1,12 @@
-<mat-card class="example-card" (click)="results()">
-  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-      <mat-card-title style="text-align: center;">Shiba Inu</mat-card-title>
+<mat-card class="example-card" (click)="results()" *ngFor="let recipe of recipes">
+  <img mat-card-image src="{{recipe.image}}" alt="Photo of a Shiba Inu">
+  <mat-card-title style="text-align: center;">{{recipe.label}}</mat-card-title>
 
   <mat-divider></mat-divider>
-  <p class="p1">1050 Calories</p>
+  <p class="p1">{{recipe.calories}}</p>
   |
   <mat-divider></mat-divider>
-    <p class="p2">10 Ingridients</p>
+  <p class="p2">10 Ingridients</p>
 </mat-card>
+
+
