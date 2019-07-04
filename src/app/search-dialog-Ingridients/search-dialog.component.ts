@@ -14,4 +14,7 @@ export class SearchDialogComponent {
     @Inject(MAT_DIALOG_DATA) public data
   ) {}
 
+  dialogClose() {
+    this.dialogRef.close();
+  }
 }
