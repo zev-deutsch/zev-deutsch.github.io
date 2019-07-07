@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchBarComponent } from './views/search-bar-ingridients/search-bar.component';
-import {MatButtonModule, MatCardModule, MatDividerModule, MatFormFieldModule, MatInputModule} from '@angular/material';
+import {MatButtonModule, MatCardModule, MatDividerModule, MatFormFieldModule, MatInputModule, MatTooltipModule} from '@angular/material';
 import { FormsModule} from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -14,6 +14,7 @@ import {SearchDialogRecipesComponent} from './views/search-dialog-recipes/search
 import { SearchResultsIngridientsComponent } from './views/search-results-ingridients/search-results-ingridients.component';
 import { SearchResultsRecipiesComponent } from './views/search-results-recipies/search-results-recipies.component';
 import {HttpClientModule} from '@angular/common/http';
+import { TruncatePipe } from './controlers/truncate.pipe';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import {HttpClientModule} from '@angular/common/http';
     SearchDialogComponent,
     SearchDialogRecipesComponent,
     SearchResultsIngridientsComponent,
-    SearchResultsRecipiesComponent
+    SearchResultsRecipiesComponent,
+    TruncatePipe
   ],
   imports: [
     BrowserModule,
@@ -37,6 +39,7 @@ import {HttpClientModule} from '@angular/common/http';
     MatCardModule,
     HttpClientModule,
     MatDividerModule,
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

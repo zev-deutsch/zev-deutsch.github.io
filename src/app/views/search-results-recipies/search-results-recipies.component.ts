@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import {DataService} from "../../controlers/data.service";
-import {Recipies} from "../../Models/recipies";
+import {DataService} from '../../controlers/data.service';
+import {Recipies} from '../../Models/recipies';
 
 
 @Component({
