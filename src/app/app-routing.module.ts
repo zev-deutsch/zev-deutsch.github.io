@@ -6,7 +6,7 @@ import {SearchResultsRecipiesComponent} from './views/search-results-recipies/se
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', component: SearchBarComponent},
-  {path: 'ingridientsresult/:search' , component: SearchResultsIngridientsComponent},
+  {path: 'recipesresults/coffe/ingridientsresult', component: SearchResultsIngridientsComponent},
   {path: 'recipesresults/:search', component: SearchResultsRecipiesComponent}
 ];
 
