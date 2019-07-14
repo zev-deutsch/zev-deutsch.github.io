@@ -19,6 +19,7 @@ export class SearchBarComponent implements OnInit {
     openRecipes(): void {
         this.dialog.open(SearchDialogRecipesComponent, {
             width: '400px',
+            height: '300px',
             data: {name: this.name}
         });
     }
