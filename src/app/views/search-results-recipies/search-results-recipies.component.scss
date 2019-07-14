@@ -1,20 +1,24 @@
+div {
+  background-color: red;
+  margin: 40px;
+}
+
+body {
+  background-color: red;
+}
+
 mat-card {
   position: relative;
   float: left;
   max-width: 200px;
   padding: auto;
   margin: 30px;
-  background-repeat: repeat;
 
 }
 
 body {
   background: lightblue;
   background-size: cover;
-}
-
-div {
-  margin: 40px;
 }
 
 .p1 {

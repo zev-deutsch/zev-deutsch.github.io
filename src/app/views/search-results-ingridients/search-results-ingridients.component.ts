@@ -7,13 +7,13 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['./search-results-ingridients.component.sass']
 })
 export class SearchResultsIngridientsComponent implements OnInit {
-search: string;
+  i: string;
   constructor(private route: ActivatedRoute) {
-    this.route.paramMap.subscribe(
-      result => {
-        this.search = result.get('search');
-      }
-    );
+    // this.route.paramMap.subscribe(
+    //   result => {
+    //     this.i = result.get('i');
+    //   }
+    // );
   }
 
   ngOnInit() {

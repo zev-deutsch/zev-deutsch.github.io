@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import {DataService} from '../../controlers/data.service';
-import {Recipies} from '../../Models/recipies';
+import {DataService} from '../../Models/data.service';
+import {Recipies} from '../../controlers/recipies';
 
 
 @Component({
@@ -25,6 +25,7 @@ export class SearchResultsRecipiesComponent implements OnInit {
   results() {
     this.service.getRecipies(this.search).subscribe((res) => {
       this.recipes = [];
+      console.log(res);
       res.hits.map((item) => {
         this.recipes.push(new Recipies(item));
       });
