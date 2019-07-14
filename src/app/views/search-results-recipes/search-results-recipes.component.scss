@@ -3,25 +3,23 @@ div {
   margin: 40px;
 }
 
-body {
-  background-color: red;
-}
-
 mat-card {
   position: relative;
-  //display: inline;
   float: left;
   max-width: 200px;
-  margin: 10px;
   padding: auto;
-  background-color: gray;
+  margin: 30px;
+
+}
+
+body {
+  background: lightblue;
+  background-size: cover;
 }
 
 .p1 {
   display: inline;
   font-size: 15px;
-
-
 }
 .p2 {
   float: right;
@@ -30,8 +28,3 @@ mat-card {
   font-size: 15px;
 }
 
-
-.example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-  background-size: cover;
-}

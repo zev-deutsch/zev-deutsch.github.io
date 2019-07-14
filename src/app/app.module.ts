@@ -21,7 +21,6 @@ import {SearchDialogComponent} from './views/search-dialog-ingredients/search-di
   declarations: [
     AppComponent,
     SearchBarComponent,
-    SearchDialogComponent,
     SearchDialogRecipesComponent,
     SearchResultsIngredientsComponent,
     SearchResultsRecipesComponent,
@@ -43,6 +42,6 @@ import {SearchDialogComponent} from './views/search-dialog-ingredients/search-di
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [SearchDialogComponent, SearchDialogRecipesComponent]
+  entryComponents: [SearchDialogRecipesComponent]
 })
 export class AppModule { }
