@@ -1,10 +1,16 @@
 mat-card {
   position: relative;
-  //display: inline;
   float: left;
   max-width: 200px;
-  margin: 10px;
   padding: auto;
+  margin: 30px;
+  background-repeat: repeat;
+
+}
+
+body {
+  background: lightblue;
+  background-size: cover;
 }
 
 div {
