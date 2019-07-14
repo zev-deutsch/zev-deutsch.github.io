@@ -14,7 +14,6 @@ import { SearchResultsIngredientsComponent } from './views/search-results-ingred
 import { SearchResultsRecipesComponent } from './views/search-results-recipes/search-results-recipes.component';
 import {HttpClientModule} from '@angular/common/http';
 import { TruncatePipe } from './controllers/truncate.pipe';
-import {SearchDialogComponent} from './views/search-dialog-ingredients/search-dialog.component';
 
 
 @NgModule({
