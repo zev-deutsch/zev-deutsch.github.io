@@ -1,8 +1,4 @@
-<body>
-
 <div>
-
-
 <mat-card (click)="results()" *ngFor="let recipe of recipes; let i = index">
   <img mat-card-image src="{{recipe.image}}" matTooltip="Photo of {{recipe.label}}">
   <mat-card-title style="text-align: center;">{{recipe.label | truncate}}</mat-card-title>
@@ -13,7 +9,5 @@
   <mat-divider></mat-divider>
   <p class="p2">{{i}}</p>
 </mat-card>
-
 </div>
 
-</body>

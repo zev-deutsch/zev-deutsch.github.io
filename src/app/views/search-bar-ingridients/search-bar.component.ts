@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {SearchDialogComponent} from '../search-dialog-Ingridients/search-dialog.component';
 import {MatDialog} from '@angular/material';
 import {SearchDialogRecipesComponent} from '../search-dialog-recipes/search-dialog-recipes.component';
 @Component({
@@ -14,13 +13,6 @@ export class SearchBarComponent implements OnInit {
   }
 
   ngOnInit() {
-  }
-
-  openDialog(): void {
-    this.dialog.open(SearchDialogComponent, {
-      width: '300px',
-      data: {name: this.name}
-    });
   }
 
   openRecipes(): void {
