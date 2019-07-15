@@ -1,10 +1,10 @@
 <div>
-    <mat-card (click)="results()" *ngFor="let recipe of recipes; let i = index">
+    <mat-card (click)="results()" *ngFor="let recipe of recipes; let i = index" routerLink="/ingredientsresult/{{i}}/{{recipe.ingredientLines}}">
         <img mat-card-image src="{{recipe.image}}" matTooltip="Photo of {{recipe.label}}">
         <mat-card-title style="text-align: center;">{{recipe.label | truncate}}</mat-card-title>
 
         <mat-divider></mat-divider>
-        <button mat-raised-button class="p1" routerLink="/ingredientsresult/{{i}}/{{recipe.ingredientLines}}">{{recipe.calories}}</button>
+        <p class="p1">{{recipe.calories}}</p>
         |
         <mat-divider></mat-divider>
         <p class="p2">{{i}}</p>
