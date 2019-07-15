@@ -4,10 +4,11 @@
   <mat-card-title style="text-align: center;">{{recipe.label | truncate}}</mat-card-title>
 
   <mat-divider></mat-divider>
-  <button mat-raised-button class="p1" routerLink="ingridientsresult/{{i}}">{{recipe.calories}}</button>
+  <button mat-raised-button class="p1" routerLink="/ingridientsresult/{{i}}">{{recipe.calories}}</button>
   |
   <mat-divider></mat-divider>
   <p class="p2">{{i}}</p>
+  <app-search-results-ingridients [ingredient]="recipe.ingredientLines"></app-search-results-ingridients>
 </mat-card>
 </div>
 

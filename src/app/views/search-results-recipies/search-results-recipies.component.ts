@@ -25,7 +25,6 @@ export class SearchResultsRecipiesComponent implements OnInit {
   results() {
     this.service.getRecipies(this.search).subscribe((res) => {
       this.recipes = [];
-      console.log(res);
       res.hits.map((item) => {
         this.recipes.push(new Recipies(item));
       });
