@@ -14,13 +14,13 @@ export class SearchResultsRecipesComponent implements OnInit {
     recipes: Recipes[];
 
     constructor(private route: ActivatedRoute, public service: DataService) {
+      this.route.paramMap.subscribe(results => {
+        this.search = results.get('search');
+      });
     }
 
     ngOnInit() {
-        this.route.paramMap.subscribe(results => {
-            this.search = results.get('search');
-        });
-        this.results();
+      this.results();
     }
 
     results() {
