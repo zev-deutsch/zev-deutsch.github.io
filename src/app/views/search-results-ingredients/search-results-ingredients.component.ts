@@ -3,12 +3,12 @@ import {ActivatedRoute} from '@angular/router';
 import {Recipies} from "../../controlers/recipies";
 
 @Component({
-  selector: 'app-search-results-ingridients',
-  templateUrl: './search-results-ingridients.component.html',
-  styleUrls: ['./search-results-ingridients.component.sass']
+  selector: 'app-search-results-ingredients',
+  templateUrl: './search-results-ingredients.component.html',
+  styleUrls: ['./search-results-ingredients.component.sass']
 })
 
-export class SearchResultsIngridientsComponent implements OnInit {
+export class SearchResultsIngredientsComponent implements OnInit {
   @Input() ingredient;
   i: string;
   //ingredient: any;
@@ -23,7 +23,7 @@ export class SearchResultsIngridientsComponent implements OnInit {
 
   ngOnInit() {
 
-     //console.log(this.ingredientLi[this.i]);
+    //console.log(this.ingredientLi[this.i]);
     // this.ingredient = this.recipies[this.i].ingredientLines;
     // console.log(this.ingredient)
   }

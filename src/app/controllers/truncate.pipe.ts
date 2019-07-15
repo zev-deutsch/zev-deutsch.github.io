@@ -12,16 +12,6 @@ export class TruncatePipe implements PipeTransform {
     } else {
       return value;
     }
-
-
-
-
-    // if too long
-  //  substring to correct length
-    // add 3 dots
-    // return
-
-    // else return string
   }
 
 }

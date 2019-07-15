@@ -1,5 +1,6 @@
+<form>
 <mat-form-field>
-  <input matInput placeholder="Search For Recipies" [(ngModel)]="search" required>
+  <input matInput placeholder="Search For Recipes" [(ngModel)]="search" name="search" required>
 </mat-form-field>
 <button mat-raised-button color="primary" routerLink="recipesresults/{{search}}" (click)="dialogClose()">Search</button>
-
+</form>
