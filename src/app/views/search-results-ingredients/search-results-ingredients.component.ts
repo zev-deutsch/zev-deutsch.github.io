@@ -9,8 +9,9 @@ import {Recipies} from "../../controlers/recipies";
 })
 
 export class SearchResultsIngredientsComponent implements OnInit {
-  @Input() ingredient;
+  //@Input() ingredient;
   i: string;
+  recipe: string;
   //ingredient: any;
   constructor(private route: ActivatedRoute) {
     this.route.paramMap.subscribe(
@@ -18,11 +19,16 @@ export class SearchResultsIngredientsComponent implements OnInit {
         this.i = result.get('i');
       }
     );
-    console.log(this.ingredient);
+    this.route.paramMap.subscribe(
+      result => {
+        this.recipe = result.get('recipe');
+      }
+    );
+    console.log(this.recipe);
   }
 
   ngOnInit() {
-
+    console.log(this.recipe);
     //console.log(this.ingredientLi[this.i]);
     // this.ingredient = this.recipies[this.i].ingredientLines;
     // console.log(this.ingredient)

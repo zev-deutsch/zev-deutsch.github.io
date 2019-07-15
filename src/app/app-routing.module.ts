@@ -6,7 +6,7 @@ import {SearchResultsRecipesComponent} from './views/search-results-recipes/sear
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', component: SearchBarComponent},
-  {path: 'ingredientsresult/:i', component: SearchResultsIngredientsComponent},
+  {path: 'ingredientsresult/:i/:recipe', component: SearchResultsIngredientsComponent},
   {path: 'recipesresults/:search', component: SearchResultsRecipesComponent}
 ];
 
