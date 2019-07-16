@@ -7,7 +7,6 @@ import {HttpClient} from '@angular/common/http';
 })
 export class DataService {
     baseUrl = 'https://api.edamam.com/search?q=';
-
     constructor(private http: HttpClient) {
     }
 
