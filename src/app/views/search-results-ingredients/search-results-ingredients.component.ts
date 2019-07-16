@@ -4,7 +4,7 @@ import {ActivatedRoute} from '@angular/router';
 @Component({
   selector: 'app-search-results-ingredients',
   templateUrl: './search-results-ingredients.component.html',
-  styleUrls: ['./search-results-ingredients.component.sass']
+  styleUrls: ['./search-results-ingredients.component.scss']
 })
 
 export class SearchResultsIngredientsComponent implements OnInit {
@@ -14,7 +14,7 @@ export class SearchResultsIngredientsComponent implements OnInit {
     this.route.paramMap.subscribe(
       result => {
         this.i = result.get('i'),
-        this.recipe = result.get('recipe')
+        this.recipe = result.get('recipe');
       }
     );
   }
