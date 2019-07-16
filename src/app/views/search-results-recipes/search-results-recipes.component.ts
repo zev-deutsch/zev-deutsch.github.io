@@ -26,10 +26,10 @@ export class SearchResultsRecipesComponent implements OnInit {
     results() {
         this.service.getRecipes(this.search).subscribe((res) => {
             this.recipes = [];
-            console.log(res);
             res.hits.map((item) => {
                 this.recipes.push(new Recipes(item));
             });
+          //this.service.data = this.recipes;
         });
     }
 }
