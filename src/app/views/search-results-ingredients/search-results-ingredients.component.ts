@@ -16,13 +16,8 @@ export class SearchResultsIngredientsComponent implements OnInit {
   constructor(private route: ActivatedRoute, private service: DataService) {
     this.route.paramMap.subscribe(
       result => {
-<<<<<<< HEAD
-        this.i = result.get('i'),
-        this.recipe = result.get('recipe');
-=======
         this.i = result.get('i');
         this.search = result.get('search');
->>>>>>> 0ff5f5cb166950e9949ca86bc604fbcdbd089251
       }
     );
   }

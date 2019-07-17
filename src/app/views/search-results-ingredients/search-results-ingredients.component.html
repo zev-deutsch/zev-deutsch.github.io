@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <mat-card class="example-card">
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div>
@@ -8,11 +7,7 @@
   <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
   <mat-card-content>
     <br>
-    {{recipe}}
+    <p *ngIf="recipes">{{recipes[i].label}}</p>
     <br>
   </mat-card-content>
 </mat-card>
-
-=======
-<p *ngIf="recipes">{{recipes[i].label}}</p>
->>>>>>> 0ff5f5cb166950e9949ca86bc604fbcdbd089251
