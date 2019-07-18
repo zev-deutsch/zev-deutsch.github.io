@@ -29,7 +29,6 @@ export class SearchResultsRecipesComponent implements OnInit {
             res.hits.map((item) => {
                 this.recipes.push(new Recipes(item));
             });
-          //this.service.data = this.recipes;
         });
     }
 }
