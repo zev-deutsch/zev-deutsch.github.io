@@ -1,13 +1,15 @@
-<mat-card class="example-card">
-  <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>Shiba Inu</mat-card-title>
-    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-  </mat-card-header>
-  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-  <mat-card-content>
-    <br>
-    <p *ngIf="recipes">{{recipes[i].label}}</p>
-    <br>
-  </mat-card-content>
-</mat-card>
+<body>
+<div *ngIf="recipes" >
+  <mat-card>
+    <mat-card-header>
+      <h2>Ingridients for {{recipes[i].label}}</h2>
+    </mat-card-header>
+    <img mat-card-image src="{{recipes[i].image}}" matTooltip="Photo of {{recipes[i].label}}">
+    <mat-card-content>
+      <ul>
+        <li><p *ngFor="let ingridient of recipes[i].ingredientLines">{{ingridient}}</p></li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+</div>
+</body>
